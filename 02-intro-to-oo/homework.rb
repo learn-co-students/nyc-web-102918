@@ -30,10 +30,36 @@ cat_people = instructors.select do |instructor|
   instructor[:cats]
 end
 
+true_cats = []
+instructors.each do |element|
+  if element[:cats]
+    true_cats << element
+  end
+end
+true_cats
+
+# def select(array)
+#   out = []
+#   array.each do |val|
+#     if yield(val)
+#       out.push(val)
+#     end
+#   end
+#   out
+# end
+
+
 # get the names of all the instructors as an array of strings
 instructor_names = instructors.map do |instructor|
   instructor[:name]
 end
+
+instructor_array = []
+instructors.each do |element|
+  instructor_array << element[:name]
+end
+instructor_array
+
 
 binding.pry
 
