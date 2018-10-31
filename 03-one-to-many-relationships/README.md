@@ -34,7 +34,8 @@ _Why do we care so much about codifying and being really specific about the term
 
 * Schema
 * Single Source of Truth
-
+  * Violating Single Source of Truth
+  
 ### Deliverables
 
 * Create a User class. The class should have these methods:
