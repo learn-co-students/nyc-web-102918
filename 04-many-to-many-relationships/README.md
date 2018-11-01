@@ -13,6 +13,9 @@
   * Go through other example domains
 * Expand on relationships to express many to many
   * We'll build out a **new** relationship from scratch to teach this concept
+    * S - Student - Squirrel  - Squirrel
+    * T - Teacher - Tree      - Tree
+    * N - Name    - Nuts      - Nest
 
 ## Recap
 
