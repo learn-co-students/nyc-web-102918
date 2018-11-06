@@ -1,5 +1,7 @@
 require_relative 'spec_helper.rb'
 
+binding.pry
+
 describe Cat do
 
   let(:cat) { Cat.new("crookshanks") }

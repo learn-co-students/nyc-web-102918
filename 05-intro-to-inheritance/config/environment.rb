@@ -2,4 +2,12 @@
 
 require 'pry'
 require 'require_all'
+require_relative '../lib/pet'
+require_relative '../lib/module'
 require_all 'lib'
+
+# cat
+# dog
+# fish
+# owner
+# pet
