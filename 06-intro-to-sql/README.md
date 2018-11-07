@@ -17,36 +17,72 @@ Intro to SQL
 3. Choose the `chinook.db` file from this repo. This database is open source and maintained by Microsoft (SQL is no fun if you don't have any data)
 4. Click the tab that says 'Execute SQL'. Type SQL queries in the box above. Press the play button. See the results of that query in the box below
 
+What is SQL?
+Structured Query Language
+
+Database <--
+Spreadsheet
+Columns => attributes
+Rows => instances
+
+Why databases?
+We want to be able to look at it later.
+Persist data
+
+, , Mongoose, , , Redis
+
+Relational Databases
+====================
+sqlite3 <== starter database
+MySQL
+Postgres
+Microsoft SQL Server
+
+=> foreign key == the instances within another class
+
+SQL => communicating with databases
+
+Validation
+
+CRUD
+
+Create - Create
+Read - Select
+Update - changing a column
+Delete
+
 ## Challenges
 
 1. Write the SQL to return all of the rows in the artists table?
 
 ```SQL
-
+SELECT * FROM artists;
 ```
 
 2. Write the SQL to select the artist with the name "Black Sabbath"
 
 ```SQL
-
+SELECT *
+FROM artists
+WHERE name = 'Black Sabbath';
 ```
 
 3. Write the SQL to create a table named 'fans' with an autoincrementing ID that's a primary key and a name field of type text
 
 ```sql
-
+CREATE TABLE fans (id INTEGER PRIMARY KEY, name TEXT);
 ```
 
 4. Write the SQL to alter the fans table to have a artist_id column type integer?
 
 ```sql
-
+ALTER TABLE fans ADD COLUMN artist_id INTEGER;
 ```
 
 5. Write the SQL to add yourself as a fan of the Black Eyed Peas? ArtistId **169**
 
 ```sql
-
+INSERT INTO fans (name, artist_id) VALUES ("Jacob", 169);
 ```
 
 6. Check out the [Faker gem](https://github.com/stympy/faker). `gem install faker`, open up irb, run `require 'faker'` and then generate a fake name for yourself using `Faker::Name.name`. How would you update your name in the fans table to be your new name?
@@ -64,7 +100,10 @@ Intro to SQL
 8. Write the SQL to display an artists name next to their album title
 
 ```sql
-
+SELECT artists.name, albums.title
+FROM artists
+INNER JOIN albums
+ON artists.ArtistId = albums.ArtistId;
 ```
 
 9. Write the SQL to display artist name, album name and number of tracks on that album
