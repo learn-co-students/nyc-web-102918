@@ -1,4 +1,16 @@
-# Intro to SQL
+Intro to SQL
+============
+
+## SWBATs
+
+- Explain persistence and the need for using SQL
+- Define SQL
+- Explain the difference between SQLite3 and SQL
+- Explore provided data through SQLite Browser
+- Perform CRUD actions on a single table
+- Perform CRUD actions across related tables
+
+## Setup
 
 1. Install the SQLite Browser if you haven't already [here](http://sqlitebrowser.org/)
 2. Open the SQLite Browser and click 'File -> Open DataBase'
