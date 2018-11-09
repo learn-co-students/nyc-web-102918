@@ -10,8 +10,9 @@ class TweetsApp
     message = gets.chomp
 
     tweet = Tweet.new({'username' => username, 'message' => message})
+    tweet.save # this will save to the database, create && update
 
-    tweets = Tweet.all
+    tweets = Tweet.all # load everything from the database
     render(tweets)
   end
 
