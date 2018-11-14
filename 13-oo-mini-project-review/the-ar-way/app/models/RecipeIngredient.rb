@@ -5,7 +5,6 @@ class RecipeIngredient
 
   def self.all
     @@all
-    #should return all of the user instances
   end
 
   def initialize(ingredient, recipe)
