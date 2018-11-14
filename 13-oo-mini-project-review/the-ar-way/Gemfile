@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+
+gem 'pry'
+gem 'require_all'
+
+# For testing:
+gem 'faker'
+
+# Added these gems for Active Record:
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rake'
+gem 'sqlite3'
