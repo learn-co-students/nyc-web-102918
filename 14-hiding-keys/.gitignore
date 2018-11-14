@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+
+log
+node_modules
+out
+tmp
+
+*.iml
+*.log
+*.swp
+
+db/*.db
+db/schema.rb
+
+.env

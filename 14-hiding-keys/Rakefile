@@ -1,0 +1,16 @@
+require_relative 'config/environment'
+require 'sinatra/activerecord/rake'
+
+desc 'starts a console'
+task :console do
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+  Pry.start
+end
+
+desc 'runs dotenv example'
+task :example do
+  puts "Look! My .env keys!"
+  puts "\tAPI_KEY = #{ENV['API_KEY']}"
+  puts "\tKEY_IS_IN_ALL_CAPS = #{ENV['KEY_IS_IN_ALL_CAPS']}"
+  Pry.start
+end
