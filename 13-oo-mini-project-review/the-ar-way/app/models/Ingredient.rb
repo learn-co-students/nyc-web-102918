@@ -1,17 +1,17 @@
-class Ingredient
-  attr_reader :name
-
-  @@all = []
-
-  def self.all
-    @@all
-  end
-
-  def initialize(name)
-    @name = name
-
-    @@all << self
-  end
+class Ingredient < ActiveRecord::Base
+  # attr_reader :name
+  #
+  # @@all = []
+  #
+  # def self.all
+  #   @@all
+  # end
+  #
+  # def initialize(name)
+  #   @name = name
+  #
+  #   @@all << self
+  # end
 
   def recipe_ingredients
     RecipeIngredient.all.select do |ri|

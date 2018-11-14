@@ -1,29 +1,35 @@
-class User
-  attr_reader :name
+class User < ActiveRecord::Base
+  has_many :recipe_cards
+  has_many :recipes, through: :recipe_cards
+  # has_many :recipe_ingredients, through: :recipes
+  # has_many :ingredients, through: :recipe_ingredients
 
-  @@all = []
+  # attr_reader :name
 
-  def self.all
-    @@all
-  end
+  # @@all = []
+  #
+  # def self.all
+  #   @@all
+  # end
 
-  def initialize(name)
-    @name = name
+  # def initialize(name)
+  #   @name = name
+  #
+  #   @@all << self
+  # end
 
-    @@all << self
-  end
+  # def recipe_cards
+  #   RecipeCard.all.select do |recipe_card|
+  #     # recipe_card.user_id == self.id
+  #     recipe_card.user == self
+  #   end
+  # end
 
-  def recipe_cards
-    RecipeCard.all.select do |recipe_card|
-      recipe_card.user == self
-    end
-  end
-
-  def recipes
-    self.recipe_cards.map do |recipe_card|
-      recipe_card.recipe
-    end
-  end
+  # def recipes
+  #   self.recipe_cards.map do |recipe_card|
+  #     recipe_card.recipe
+  #   end
+  # end
 
   def add_recipe_card(recipe, date, rating)
     RecipeCard.new(self, recipe, date, rating)
@@ -33,16 +39,16 @@ class User
 
   end
 
-  def allergens
-    Allergen.all.select do |allergen|
-      allergen.user == self
-    end
-  end
-
-  def ingredients
-    # do this!
-  end
-
+  # def allergens
+  #   Allergen.all.select do |allergen|
+  #     allergen.user == self
+  #   end
+  # end
+  #
+  # def ingredients
+  #   # do this!
+  # end
+  #
   def top_three_recipes
     sorted_recipe_cards = self.recipe_cards.sort_by do |recipe_card|
       recipe_card.rating
