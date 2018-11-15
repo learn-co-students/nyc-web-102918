@@ -22,6 +22,12 @@ OO Mini Review => Active Record
   * Build out 1-2 advanced methods.
 2. See how it relates to Active Record by converting it to use Active Record.
 
+1. create a model
+2. create migration, write the migration code
+3. migrate it!!!!
+4. check the schema!!!!!!!!!!!!!!!!!!!!!!!!
+5. do the other stuff, test
+
 ---
 
 ## OO Recipes Mini Project
