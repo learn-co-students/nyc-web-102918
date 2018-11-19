@@ -3,7 +3,7 @@ Intro to Test Driven Development
 
 ## SWBAT
 
-* Integrate testing into their  projects using RSpec
+* Integrate testing into their projects using RSpec
 * Set up testing in a new project
 * Define Test-Driven development
 * Describe what a testing framework is and what the RSpec framework does
