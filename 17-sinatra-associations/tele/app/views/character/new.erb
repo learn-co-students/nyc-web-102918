@@ -1,0 +1,10 @@
+<form action="/characters" method="post">
+  <input type="text" name="name" placeholder="name please">
+  <input type="text" name="role" placeholder="role">
+  <select name="show_id">
+    <% @shows.each do |show| %>
+      <option value=<%= show.id %>><%= show.title %></option>
+    <% end %>
+  </select>
+  <input type="submit">
+</form>

@@ -1,0 +1,13 @@
+<h1> EDIt not new. im not crazy 💪</h1>
+
+<form action="/characters/<%= @character.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="text" name="name" value="<%= @character.name %>">
+  <input type="text" name="role" value="<%= @character.role %>">
+  <select name="show_id">
+    <% @shows.each do |show| %>
+      <option value=<%= show.id %>><%= show.title %></option>
+    <% end %>
+  </select>
+  <input type="submit">
+</form>
