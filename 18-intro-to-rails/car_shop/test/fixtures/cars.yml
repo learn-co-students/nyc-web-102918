@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  model: MyString
+  year: 1
+  coolness: 1
+
+two:
+  brand: MyString
+  model: MyString
+  year: 1
+  coolness: 1
