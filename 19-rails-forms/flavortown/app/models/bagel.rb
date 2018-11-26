@@ -1,0 +1,2 @@
+class Bagel < ApplicationRecord
+end

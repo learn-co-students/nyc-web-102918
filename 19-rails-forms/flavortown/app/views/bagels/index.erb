@@ -1,0 +1,9 @@
+<h1> index</h1>
+
+<ol>
+<% @bagels.each do |bagel| %>
+  <li><%= link_to bagel.name, bagel_path(bagel) %></li>
+  <%= link_to "edit this page", edit_bagel_path(bagel) %>
+  <%= button_to('Destroy', bagel_path(bagel),method: "delete", data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
+<% end %>
+</ol>

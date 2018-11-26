@@ -1,0 +1,9 @@
+<h1> EDIT FORM for BAGELZ</h1>
+
+<%= form_for @bagel do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %>
+  <%= f.label :toasty %>:
+  <%= f.check_box :toasty %>
+  <%= f.submit %>
+<% end %>

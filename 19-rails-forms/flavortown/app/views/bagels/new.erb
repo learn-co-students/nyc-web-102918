@@ -1,0 +1,19 @@
+<h1> That new bagel tho</h1>
+
+
+<p>  FORM TAG FORM </p>
+  <%= form_tag bagels_path, method: :post do %>
+  <%= label_tag :name %>
+  <%= text_field_tag :name %>
+  <%= submit_tag "submit this form" %>
+<% end %>
+
+<p> Form For</p>
+
+<%= form_for @bagel do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %>
+  <%= f.label :toasty %>:
+  <%= f.check_box :toasty %>
+  <%= f.submit %>
+<% end %>
