@@ -1,0 +1,12 @@
+<h1> GIFT NEW not party new f'sho</h1>
+
+
+<%= form_for @gift do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.label :party_id %>
+  <%= f.collection_select(:party_id, @parties, :id, :name, prompt: true) %>
+  <%= f.submit %>
+<% end %>

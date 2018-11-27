@@ -1,0 +1,10 @@
+
+<%= form_for @party do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :theme %>
+  <%= f.text_field :theme %>
+  <%= f.label :attendeez %>
+  <%= f.number_field :attendeez %>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,8 @@
+<h1> Some generic Title</h1>
+
+
+<% @parties.each do |party| %>
+  <%= link_to party.name, party %>
+  <%= link_to "edit party", edit_party_path(party) %>
+  <%= link_to "DELETE THE PARTY", party_path(party), method: :delete %>
+<% end %>
