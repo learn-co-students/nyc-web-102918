@@ -1,0 +1,21 @@
+<h1> new pet form! YaY 👾</h1>
+
+
+<ol>
+  <!-- Error collection?? maybe an array? -->
+  <% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+    <li> <%= error %> </li>
+    <% end %>
+  <% end %>
+</ol>
+
+<%= form_for @pet do |f| %>
+  <%= f.label :creature %>
+  <%= f.text_field :creature %>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <%= f.label :cute %>
+  <%= f.check_box :cute %>
+  <%= f.submit %>
+<% end %>
