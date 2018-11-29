@@ -1,0 +1,22 @@
+<ul>
+  <% if @post.errors.any? %>
+    <% @post.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= form_for @post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br /><br />
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <br /><br />
+  <%= f.label :like_count %>
+  <%= f.number_field :like_count %>
+  <br /><br />
+  <%= f.label :blogger %>
+  <%= f.collection_select :blogger_id, @bloggers, :id, :name, { prompt: true } %>
+  <%= f.submit %>
+<% end %>

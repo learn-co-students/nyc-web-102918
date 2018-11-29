@@ -1,0 +1,10 @@
+<h1><%= @post.title %></h1>
+<p>Author: <%= link_to @author.name,@author %></p>
+<p>Like Count: <%= @post.like_count %></p>
+
+<%= form_tag likes_path(@post), method: 'patch' do %>
+  <%= submit_tag '♥' %>
+<% end %>
+
+
+<p><%= @post.content %></p>

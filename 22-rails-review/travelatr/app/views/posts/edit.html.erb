@@ -1,0 +1,10 @@
+<h1>Edit Post</h1>
+
+<%= render partial: 'form' %>
+
+<hr>
+<%# you can also use button_to or link_to for delete %>
+
+<%= form_for @post, method: 'delete' do |f| %>
+  <%= f.submit 'DELETE THIS POST' %>
+<% end %>
