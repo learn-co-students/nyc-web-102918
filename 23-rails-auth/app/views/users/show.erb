@@ -1,0 +1,11 @@
+
+
+
+Username: <%= @user.username %>
+<img src="<%= @user.avatar %>" alt="">
+
+
+<% if current_user.id == @user.id %>
+  <%= button_to "delete profile", user_path(@user), method: :delete %>
+  <%= button_to "logout", logout_path, method: :delete %>
+<% end %>
