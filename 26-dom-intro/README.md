@@ -48,7 +48,7 @@
     contains objects. DOM methods allow programmatic access to the tree; with them you can change the document's
     structure, style or content." -
     [MDN Article on the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-- Elements (`nodes`) have properties that can be manipulated (`style`, `innerText`, `innerHTML`, etc). In this particular example, we'll be manipulating the `.src` attribute of some `img` tags.
+- Elements (`nodes`) have properties that can be manipulated (`style`, `textContent`, `innerHTML`, etc). In this particular example, we'll be manipulating the `.src` attribute of some `img` tags.
 - Element interfaces
   - Different elements (`table`, `p`, `image`) support different methods
     - `image.src`, for instance
@@ -113,8 +113,8 @@ nestedH1AsArray.map //function
 ### Modifying DOM Nodes
 - We can assign a `node` to a variable: `const body = document.querySelector('body')`
 - We can change the attributes of a `node`: `body.style.backgroundColor = red`
-- `innerText`vs. `innerHTML`:
-  - The `innerText` of a particular element is the text that appears in between the opening and closing tags: `<h1>HELLO WORLD</h1>` the `innerText` is the string `HELLO WORLD`
+- `textContent`vs. `innerHTML`:
+  - The `textContent` of a particular element is the text that appears in between the opening and closing tags: `<h1>HELLO WORLD</h1>` the `textContent` is the string `HELLO WORLD`
   - The `innerHTML` of a particular element is a **string representing all of the HTML and text of a particular node and its children***:
 
 ```html
@@ -130,7 +130,7 @@ nestedH1AsArray.map //function
 ```js
 const outerNode = document.querySelector('#outer-node')
 
-outerNode.innerText // 'Internet Memes'
+outerNode.textContent // 'Internet Memes'
 outerNode.innerHTML
 /*
 "
