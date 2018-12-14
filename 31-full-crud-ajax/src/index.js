@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					    <div style="width:239px;margin:auto">
 					      <div style="width:96px;margin:auto">
 					        <img data-id="${pokemon.id}" data-beef="stroganoff" data-action="flip" class="toggle-sprite" src="${pokemon.sprites.front}">
+									<button data-action="edit">Edit</button>
 					      </div>
 					    </div>
 					  </div>
