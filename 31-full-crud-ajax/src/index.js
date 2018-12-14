@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let allPokemon = []
 	const pokemonContainer = document.getElementById("pokemon-container")
+	const newPokemonForm = document.querySelector("#new-pokemon-form")
 	const searchBar = document.getElementById("pokemon-search-input")
 
 	function fetchPokemon(){
@@ -34,6 +35,46 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 
 	}
+
+	newPokemonForm.addEventListener("submit", (e) => {
+		e.preventDefault() //stop form from POSTing
+		const newPokeName = e.target.querySelector("#new-poke-name").value
+		const newPokeFrontImg = e.target.querySelector("#new-poke-front-sprite").value
+		const newPokeBackImg = e.target.querySelector("#new-poke-back-sprite").value
+
+		fetch("http://localhost:3000/pokemon", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json", //type of data being sent
+				"Accept": "application/json" //type of data I (the client) want back
+			},
+			body: JSON.stringify({
+				name: newPokeName,
+				sprites: {
+					front: newPokeFrontImg,
+					back: newPokeBackImg
+				}
+			})
+		})
+		.then(/*function*/r => /*return*/ r.json())
+		.then(newPoke => {
+			allPokemon.push(newPoke)
+			pokemonContainer.innerHTML += `
+				<div data-id="${newPoke.id}"class="pokemon-container">
+					<div style="width:230px;margin:10px;background:#fecd2f;color:#2d72fc" class="pokemon-frame">
+						<h1 class="center-text">${newPoke.name}</h1>
+						<div style="width:239px;margin:auto">
+							<div style="width:96px;margin:auto">
+								<img data-id="${newPoke.id}" data-beef="stroganoff" data-action="flip" class="toggle-sprite" src="${newPoke.sprites.front}">
+							</div>
+						</div>
+					</div>
+				</div>
+			`
+		})
+
+
+	})
 
 	pokemonContainer.addEventListener("click", (e) => {
 		if (e.target.tagName === "IMG") {
