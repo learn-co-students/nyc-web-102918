@@ -1,55 +1,10 @@
 {
   "pokemon": [
     {
-      "height": 10,
-      "weight": 130,
-      "id": 2,
-      "name": "ivysaur",
-      "abilities": [
-        "overgrow",
-        "chlorophyll"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 80,
-          "name": "special-defense"
-        },
-        {
-          "value": 80,
-          "name": "special-attack"
-        },
-        {
-          "value": 63,
-          "name": "defense"
-        },
-        {
-          "value": 62,
-          "name": "attack"
-        },
-        {
-          "value": 60,
-          "name": "speed"
-        },
-        {
-          "value": 60,
-          "name": "hp"
-        }
-      ],
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png"
-      }
-    },
-    {
       "height": 20,
       "weight": 1000,
       "id": 3,
-      "name": "venusaur",
+      "name": "VENUSAUR!!!!!!!",
       "abilities": [
         "overgrow",
         "chlorophyll"
@@ -94,7 +49,7 @@
       "height": 6,
       "weight": 85,
       "id": 5,
-      "name": "charmander",
+      "name": "CHARM-MANDER",
       "abilities": [
         "blaze",
         "solar-power"
@@ -149,7 +104,7 @@
       "height": 11,
       "weight": 190,
       "id": 6,
-      "name": "charmeleon",
+      "name": "CHARMING MELION",
       "abilities": [
         "blaze",
         "solar-power"
@@ -304,7 +259,7 @@
       "height": 10,
       "weight": 225,
       "id": 11,
-      "name": "wartortle",
+      "name": "TURTLE",
       "abilities": [
         "torrent",
         "rain-dish"
@@ -479,7 +434,7 @@
       "height": 11,
       "weight": 320,
       "id": 16,
-      "name": "butterfree",
+      "name": "SO FREEE",
       "abilities": [
         "compound-eyes",
         "tinted-lens"
@@ -524,7 +479,7 @@
       "height": 3,
       "weight": 32,
       "id": 17,
-      "name": "weedle",
+      "name": "SOME WORM",
       "abilities": [
         "shield-dust",
         "run-away"
@@ -607,51 +562,6 @@
       "sprites": {
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/14.png"
-      }
-    },
-    {
-      "height": 10,
-      "weight": 295,
-      "id": 19,
-      "name": "beedrill",
-      "abilities": [
-        "swarm",
-        "sniper"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 90,
-          "name": "attack"
-        },
-        {
-          "value": 80,
-          "name": "special-defense"
-        },
-        {
-          "value": 75,
-          "name": "speed"
-        },
-        {
-          "value": 65,
-          "name": "hp"
-        },
-        {
-          "value": 45,
-          "name": "special-attack"
-        },
-        {
-          "value": 40,
-          "name": "defense"
-        }
-      ],
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png"
       }
     },
     {
@@ -796,7 +706,7 @@
       "height": 3,
       "weight": 35,
       "id": 25,
-      "name": "rattata",
+      "name": "JUST A RAT",
       "abilities": [
         "run-away",
         "guts",
@@ -978,51 +888,6 @@
       "sprites": {
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/22.png"
-      }
-    },
-    {
-      "height": 20,
-      "weight": 69,
-      "id": 29,
-      "name": "ekans",
-      "abilities": [
-        "intimidate",
-        "shed-skin",
-        "unnerve"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 60,
-          "name": "attack"
-        },
-        {
-          "value": 55,
-          "name": "speed"
-        },
-        {
-          "value": 54,
-          "name": "special-defense"
-        },
-        {
-          "value": 44,
-          "name": "defense"
-        },
-        {
-          "value": 40,
-          "name": "special-attack"
-        },
-        {
-          "value": 35,
-          "name": "hp"
-        }
-      ],
-      "types": [
-        "poison"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/23.png"
       }
     },
     {
@@ -4098,153 +3963,6 @@
       }
     },
     {
-      "height": 17,
-      "weight": 1200,
-      "id": 109,
-      "name": "dewgong",
-      "abilities": [
-        "thick-fat",
-        "hydration",
-        "ice-body"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 95,
-          "name": "special-defense"
-        },
-        {
-          "value": 90,
-          "name": "hp"
-        },
-        {
-          "value": 80,
-          "name": "defense"
-        },
-        {
-          "value": 70,
-          "name": "speed"
-        },
-        {
-          "value": 70,
-          "name": "special-attack"
-        },
-        {
-          "value": 70,
-          "name": "attack"
-        }
-      ],
-      "types": [
-        "water",
-        "ice"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/87.png"
-      }
-    },
-    {
-      "height": 9,
-      "weight": 300,
-      "id": 110,
-      "name": "grimer",
-      "abilities": [
-        "stench",
-        "sticky-hold",
-        "poison-touch"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 80,
-          "name": "attack"
-        },
-        {
-          "value": 80,
-          "name": "hp"
-        },
-        {
-          "value": 50,
-          "name": "special-defense"
-        },
-        {
-          "value": 50,
-          "name": "defense"
-        },
-        {
-          "value": 40,
-          "name": "special-attack"
-        },
-        {
-          "value": 25,
-          "name": "speed"
-        }
-      ],
-      "types": [
-        "poison"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/88.png"
-      }
-    },
-    {
-      "height": 12,
-      "weight": 300,
-      "id": 111,
-      "name": "muk",
-      "abilities": [
-        "stench",
-        "sticky-hold",
-        "poison-touch"
-      ],
-      "moves": [
-        "pound",
-        "disable",
-        "mega-drain",
-        "rage",
-        "harden",
-        "minimize",
-        "bide",
-        "self-destruct",
-        "sludge",
-        "poison-gas"
-      ],
-      "stats": [
-        {
-          "value": 105,
-          "name": "attack"
-        },
-        {
-          "value": 105,
-          "name": "hp"
-        },
-        {
-          "value": 100,
-          "name": "special-defense"
-        },
-        {
-          "value": 75,
-          "name": "defense"
-        },
-        {
-          "value": 65,
-          "name": "special-attack"
-        },
-        {
-          "value": 50,
-          "name": "speed"
-        }
-      ],
-      "types": [
-        "poison"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/89.png"
-      }
-    },
-    {
       "height": 3,
       "weight": 40,
       "id": 112,
@@ -6583,151 +6301,6 @@
       }
     },
     {
-      "height": 8,
-      "weight": 365,
-      "id": 186,
-      "name": "porygon",
-      "abilities": [
-        "trace",
-        "download",
-        "analytic"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 85,
-          "name": "special-attack"
-        },
-        {
-          "value": 75,
-          "name": "special-defense"
-        },
-        {
-          "value": 70,
-          "name": "defense"
-        },
-        {
-          "value": 65,
-          "name": "hp"
-        },
-        {
-          "value": 60,
-          "name": "attack"
-        },
-        {
-          "value": 40,
-          "name": "speed"
-        }
-      ],
-      "types": [
-        "normal"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/137.png"
-      }
-    },
-    {
-      "height": 4,
-      "weight": 75,
-      "id": 189,
-      "name": "omanyte",
-      "abilities": [
-        "swift-swim",
-        "shell-armor",
-        "weak-armor"
-      ],
-      "moves": [
-        "horn-attack",
-        "hydro-pump",
-        "bubble-beam",
-        "rage",
-        "withdraw",
-        "bide",
-        "spike-cannon"
-      ],
-      "stats": [
-        {
-          "value": 100,
-          "name": "defense"
-        },
-        {
-          "value": 90,
-          "name": "special-attack"
-        },
-        {
-          "value": 55,
-          "name": "special-defense"
-        },
-        {
-          "value": 40,
-          "name": "attack"
-        },
-        {
-          "value": 35,
-          "name": "speed"
-        },
-        {
-          "value": 35,
-          "name": "hp"
-        }
-      ],
-      "types": [
-        "rock",
-        "water"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/138.png"
-      }
-    },
-    {
-      "height": 10,
-      "weight": 350,
-      "id": 190,
-      "name": "omastar",
-      "abilities": [
-        "swift-swim",
-        "shell-armor",
-        "weak-armor"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 125,
-          "name": "defense"
-        },
-        {
-          "value": 115,
-          "name": "special-attack"
-        },
-        {
-          "value": 70,
-          "name": "special-defense"
-        },
-        {
-          "value": 70,
-          "name": "hp"
-        },
-        {
-          "value": 60,
-          "name": "attack"
-        },
-        {
-          "value": 55,
-          "name": "speed"
-        }
-      ],
-      "types": [
-        "rock",
-        "water"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/139.png"
-      }
-    },
-    {
       "height": 5,
       "weight": 115,
       "id": 191,
@@ -6817,62 +6390,6 @@
       "sprites": {
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/141.png"
-      }
-    },
-    {
-      "height": 18,
-      "weight": 590,
-      "id": 193,
-      "name": "aerodactyl",
-      "abilities": [
-        "rock-head",
-        "pressure",
-        "unnerve"
-      ],
-      "moves": [
-        "razor-wind",
-        "wing-attack",
-        "whirlwind",
-        "fly",
-        "supersonic",
-        "dragon-rage",
-        "rage",
-        "bide",
-        "sky-attack"
-      ],
-      "stats": [
-        {
-          "value": 130,
-          "name": "speed"
-        },
-        {
-          "value": 105,
-          "name": "attack"
-        },
-        {
-          "value": 80,
-          "name": "hp"
-        },
-        {
-          "value": 75,
-          "name": "special-defense"
-        },
-        {
-          "value": 65,
-          "name": "defense"
-        },
-        {
-          "value": 60,
-          "name": "special-attack"
-        }
-      ],
-      "types": [
-        "rock",
-        "flying"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/142.png"
       }
     },
     {
@@ -6974,96 +6491,6 @@
       "sprites": {
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/144.png"
-      }
-    },
-    {
-      "height": 16,
-      "weight": 526,
-      "id": 198,
-      "name": "zapdos",
-      "abilities": [
-        "pressure",
-        "static"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 125,
-          "name": "special-attack"
-        },
-        {
-          "value": 100,
-          "name": "speed"
-        },
-        {
-          "value": 90,
-          "name": "special-defense"
-        },
-        {
-          "value": 90,
-          "name": "attack"
-        },
-        {
-          "value": 90,
-          "name": "hp"
-        },
-        {
-          "value": 85,
-          "name": "defense"
-        }
-      ],
-      "types": [
-        "electric",
-        "flying"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/145.png"
-      }
-    },
-    {
-      "height": 20,
-      "weight": 600,
-      "id": 199,
-      "name": "moltres",
-      "abilities": [
-        "pressure",
-        "flame-body"
-      ],
-      "moves": [],
-      "stats": [
-        {
-          "value": 125,
-          "name": "special-attack"
-        },
-        {
-          "value": 100,
-          "name": "attack"
-        },
-        {
-          "value": 90,
-          "name": "speed"
-        },
-        {
-          "value": 90,
-          "name": "defense"
-        },
-        {
-          "value": 90,
-          "name": "hp"
-        },
-        {
-          "value": 85,
-          "name": "special-defense"
-        }
-      ],
-      "types": [
-        "fire",
-        "flying"
-      ],
-      "sprites": {
-        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
-        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/146.png"
       }
     },
     {
@@ -7328,14 +6755,6 @@
       }
     },
     {
-      "name": "bulbasaur`",
-      "sprites": {
-        "front": "http://www.pokemonget.eu/shop/155-large_default/bulbasaur-6-ivs-shiny.jpg",
-        "back": "https://vignette.wikia.nocookie.net/pokemontowerdefense/images/2/21/001Bulbasaur.png/revision/latest?cb=20130530130719"
-      },
-      "id": 207
-    },
-    {
       "name": "PIZZAMON",
       "sprites": {
         "front": "https://www.pizzahut.com/assets/w/images/homepage_hero/PH_$7.99+L+2+Top_Hero_2400x650.jpg",
@@ -7350,102 +6769,6 @@
         "back": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Supreme.png"
       },
       "id": 209
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 210
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 211
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 212
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 213
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 214
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 215
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 216
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 217
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 218
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 219
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 220
-    },
-    {
-      "name": "REECESMON",
-      "sprites": {
-        "front": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/Reeses_PDP_PBIcecreamSandwich_cutasset.jpg?hei=570&wid=570&fmt=jpg",
-        "back": "https://www.hersheys.com/is/image/content/dam/reeses/en_us/images/products/related_products_board/reeses_product_cupsfamily_dark_320x203.jpg?hei=203&wid=360&fmt=jpg"
-      },
-      "id": 221
     }
   ]
 }
