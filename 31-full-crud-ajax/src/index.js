@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function showAllPokemon(pokemon){
 		pokemonContainer.innerHTML = pokemon.map(renderSinglePokemon).join('')
 		// pokemon.forEach((pokemon) => {
-		// 		pokemonContainer.innerHTML += renderSinglePokemon(pokemon)
+		//    pokemonContainer.innerHTML += renderSinglePokemon(pokemon)
 		// })
 
 	}
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			// re-render the entire pokemon container!!!
 			allPokemon = allPokemon.filter(/*function*/(pokemon) => /*return*/ {
-			 	return pokemon.id !== parseInt(e.target.dataset.id)
+				return pokemon.id !== parseInt(e.target.dataset.id)
 				// return pokemon.id != e.target.dataset.id
 			})
 			showAllPokemon(allPokemon)
@@ -136,11 +136,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 		// cards.forEach(card => {
-		// 	if (filteredPokemonIDs.includes(parseInt(card.dataset.id))){
-		// 		card.style.display = ""
-		// 	} else {
-		// 		card.style.display = "none"
-		// 	}
+		//  if (filteredPokemonIDs.includes(parseInt(card.dataset.id))){
+		//    card.style.display = ""
+		//  } else {
+		//    card.style.display = "none"
+		//  }
 		// })
 
 		pokemonContainer.innerHTML = ""
