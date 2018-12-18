@@ -9,6 +9,7 @@ class Person
   end
 end
 
+
 Person.say_something # => self will be Person class
 # self in ruby is the receiver of a method
 
