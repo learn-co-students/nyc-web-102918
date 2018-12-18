@@ -6,10 +6,9 @@ let movement
 const characterAssets = 'assets/character'
 characterElement.src = `${characterAssets}/static.gif`
 characterElement.style.position = 'relative'
-characterElement.style.left = 0
-characterElement.style.right = 0
 characterElement.style.left = '0px'
 characterElement.style.top = '0px'
+characterElement.style.width = '25px'
 
 main.appendChild(characterElement)
 
