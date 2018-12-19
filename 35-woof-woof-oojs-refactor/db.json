@@ -8,8 +8,8 @@
     },
     {
       "id": 2,
-      "name": "Nugget",
-      "isGoodDog": false,
+      "name": "Nugget!!!!!!",
+      "isGoodDog": true,
       "image": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "id": 9,
-      "name": "Middens",
+      "name": "MIDDENNSSSSSS",
       "isGoodDog": true,
       "image": "http://www.slate.com/content/dam/slate/articles/health_and_science/Science/2017/08/170803_MEDEX_SickDog.jpg.CROP.promo-xlarge2.jpg"
     },
@@ -58,7 +58,7 @@
       "id": 10,
       "name": "Fido",
       "isGoodDog": true,
-      "image": "https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg"
+      "image": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13002253/GettyImages-521536928-_1_.jpg"
     }
   ]
 }
