@@ -1,0 +1,2 @@
+class HoneyBadger < ApplicationRecord
+end

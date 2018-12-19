@@ -1,0 +1,27 @@
+<%= form_with(model: honey_badger, local: true) do |form| %>
+  <% if honey_badger.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(honey_badger.errors.count, "error") %> prohibited this honey_badger from being saved:</h2>
+
+      <ul>
+      <% honey_badger.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @honey_badger.name %>
+  <img height="100" width="100" src="<%= @honey_badger.img %>"/>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @honey_badger.weight %>
+</p>
+
+<%= link_to 'Edit', edit_honey_badger_path(@honey_badger) %> |
+<%= link_to 'Back', honey_badgers_path %>
