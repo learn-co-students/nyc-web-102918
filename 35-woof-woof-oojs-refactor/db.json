@@ -2,13 +2,13 @@
   "pups": [
     {
       "id": 1,
-      "name": "Mr. Bonkers",
+      "name": "Mr. Bonkers!",
       "isGoodDog": true,
       "image": "https://weloveanimals.me/wp-content/uploads/2017/10/gettyimages-590486672-e1508512743796.jpg"
     },
     {
       "id": 2,
-      "name": "Nugget!!!!!!",
+      "name": "Nugget!!!!",
       "isGoodDog": true,
       "image": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
     },
