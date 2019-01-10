@@ -81,65 +81,112 @@ Persisting data/change? Well _crud_... how do we do that? 🤔
 
 [Documentation of using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
-`PUT` vs `PATCH`
-
-The existing HTTP PUT method only allows a complete replacement of a document. This proposal adds a new HTTP method, PATCH, to modify an existing HTTP resource.
 
 ### JSON Server Routes
 
 Minimal explanation of our API:
 
 ```
-GET    /pokemon
-GET    /pokemon/1
-POST   /pokemon
-PUT    /pokemon/1
-PATCH  /pokemon/1
-DELETE /pokemon/1
+GET    /pokemon        #index
+GET    /pokemon/1      #show
+POST   /pokemon        #create
+PUT    /pokemon/1      #update
+PATCH  /pokemon/1      #update
+DELETE /pokemon/1      #delete
 ```
+Where is the new || edit?
+  - No need! 
+  - Form can be added with AJAX!
 
 To `POST` a new Pokemon:
 
 ```
-body: JSON.stringify({
-  "height": 10,
-  "weight": 130,
-  "id": 2,
-  "name": "ivysaur",
-  "abilities": ["overgrow", "chlorophyll"],
-  "moves": [],
-  "stats": [
+const postPokemon = (event) => {
+  // Update the Database
+  fetch(`http://localhost:3000/pokemon`,
     {
-      "value": 80,
-      "name": "special-defense"
-    },
-    {
-      "value": 80,
-      "name": "special-attack"
-    },
-    {
-      "value": 63,
-      "name": "defense"
-    },
-    {
-      "value": 62,
-      "name": "attack"
-    },
-    {
-      "value": 60,
-      "name": "speed"
-    },
-    {
-      "value": 60,
-      "name": "hp"
+      method: 'POST',
+      headers: {
+          "Content-Type": "application/json; charset=utf-8",
+          // "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: JSON.stringify({
+        "height": 10,
+        "weight": 130,
+        // "id": 2,
+        "name": event.target.children[1].value, // HACK: super hacky, add to form, it breaks!
+        "abilities": ["overgrow", "chlorophyll"],
+        "moves": [],
+        "stats": [
+          {
+            "value": 80,
+            "name": "special-defense"
+          },
+          {
+            "value": 80,
+            "name": "special-attack"
+          },
+          {
+            "value": 63,
+            "name": "defense"
+          },
+          {
+            "value": 62,
+            "name": "attack"
+          },
+          {
+            "value": 60,
+            "name": "speed"
+          },
+          {
+            "value": 60,
+            "name": "hp"
+          }
+        ],
+        "types": ["grass", "poison"],
+        "sprites": {
+          "front": pokemonUrlInput.value,
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png"
+        }
+      })
     }
-  ],
-  "types": ["grass", "poison"],
-  "sprites": {
-    "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
-    "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png"
-  }
-})
+  )
+    .then(response => {
+      // console.log(response);
+      return response.json();
+    })
+    .then(pokemonObj => {
+
+      // Approach 1
+      // rerender it all!!!
+      // pokemonContainerForRenderingCards.innerHTML = renderAllPokemon(allPokemonData);
+
+      // Approach 2
+      // 2. appendChild
+      // construct the entire element
+      // const pokemonElement = document.createElement(``)
+      // pokemonContainerForRenderingCards.appendChild(pokemonElement)
+
+      // Approach 3
+      // 3. add to innerHTML
+      // UPDATING DOM
+      pokemonContainerForRenderingCards.innerHTML += `
+        <div data-id="${pokemonObj.id}" class="pokemon-card">
+          <div style="width:230px;margin:10px;background:#fecd2f;color:#2d72fc" class="pokemon-frame">
+            <h1 class="center-text">${pokemonObj.name}</h1>
+            <div style="width:239px;margin:auto">
+              <div style="width:96px;margin:auto">
+                <img name="flip" data-id="${pokemonObj.id}" data-action="flip" class="toggle-sprite" src="${pokemonObj.sprites.front}">
+              </div>
+            </div>
+            <button data-action="delete" class="pokebutton idontknow" style="width: 230px;margin:auto;">Delete</button>
+          </div>
+        </div>
+      `
+      // Update local Variables IF using local variables
+      allPokemonData.push(pokemonObj);
+    })
+}
 ```
 
 ### Fetching ⚾️ <== 🐕
@@ -269,3 +316,9 @@ For example:
   </div>
 </div>
 ```
+
+## RESOURCES
+
+- [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+- [FETCH MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
