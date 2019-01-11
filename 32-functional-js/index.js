@@ -1,25 +1,25 @@
 
 // EXAMPLE OF H-O FUNCTION THAT RETURNS FUNCTION
 // function taxCalculator(tax){
-// 	console.log("MAKING MY TAX CALCULATOR")
+//  console.log("MAKING MY TAX CALCULATOR")
 
-// 	return function(price){
-// 		console.log("CALLING MY CALCULATOR")
-// 		return price + price*tax
-// 	}
+//  return function(price){
+//    console.log("CALLING MY CALCULATOR")
+//    return price + price*tax
+//  }
 // }
 
 // function robotFactory(){
-// 	let count = 0
-// 	let all = []
+//  let count = 0
+//  let all = []
 
-// 	return function(name){
-// 		count++
-// 		let obj = {name: name, id: count}
+//  return function(name){
+//    count++
+//    let obj = {name: name, id: count}
 
-// 		all.push(obj)
-// 		return obj
-// 	}
+//    all.push(obj)
+//    return obj
+//  }
 // }
 
 
@@ -46,69 +46,70 @@
 
 // WRITING OUR OWN ITERATORS
 // function myForEach(array, callback){
-// 	for(let i=0; i < array.length; i++){
-// 		callback(array[i])
-// 	}
+//  for(let i=0; i < array.length; i++){
+//    callback(array[i])
+//  }
 // }
 
 // function myMap(array, callback){
-// 	let copy = array.slice()
+//  let copy = array.slice()
 
-// 	for(let i=0; i < array.length; i++){
-// 		copy[i] = callback(array[i])
-// 	}
+//  for(let i=0; i < array.length; i++){
+//    copy[i] = callback(array[i])
+//  }
 
-// 	return copy
+//  return copy
 // }
 
 
 
 function Adapter(baseURL){
-	// baseURL: "http://localhost:3000"
+  // baseURL: "http://localhost:3000"
 
-	function get(route){
-		// route: "/pokemon"
-		return fetch(baseURL + route)
-		.then(res=> res.json())
-	}
+  function get(route, callback){
+    // route: "/pokemon"
+    return fetch(baseURL + route)
+    .then(res=> res.json())
+    .then(callback)
+  }
 
-	function post(route, data){
-		
-		const params = createParams("POST", data)
+  function post(route, data){
+    
+    const params = createParams("POST", data)
 
-		return fetch(baseURL + route, params)
-		.then(res => res.json())
-	}
+    return fetch(baseURL + route, params)
+    .then(res => res.json())
+  }
 
-	function patch(route, data){
-		
-		const params = createParams("PATCH", data)
+  function patch(route, data){
+    
+    const params = createParams("PATCH", data)
 
-		return fetch(baseURL + route, params)
-		.then(res => res.json())
-	}
+    return fetch(baseURL + route, params)
+    .then(res => res.json())
+  }
 
-	function createParams(method, data){
+  function createParams(method, data){
 
-		const params = {
-			method: method,
-			headers: {
-				"Content-Type": "application/json",
-				"Accepts": "application/json"
-			},
-			body: JSON.stringify(data)
-		}
+    const params = {
+      method: method,
+      headers: {
+        "Content-Type": "application/json",
+        "Accepts": "application/json"
+      },
+      body: JSON.stringify(data)
+    }
 
-		return params
-	}
+    return params
+  }
 
-	let allFuncs = {
-		get: get,
-		post: post,
-		patch: patch
-	}
+  let allFuncs = {
+    get: get,
+    post: post,
+    patch: patch
+  }
 
-	return allFuncs
+  return allFuncs
 }
 
 
@@ -117,6 +118,21 @@ let adapter = Adapter("http://localhost:3000")
 
 
 
+function Renderer(container){
 
+  function renderOne(callback, data){
+    return callback(data)
+  }
+
+  function renderAll(callback, dataArray){
+    dataArray.forEach(data => {
+      container.innerHTML += renderOne(callback, data)
+    })
+  }
+
+  function clear(){
+    container.innerHTML = ""
+  }
+}
 
 
