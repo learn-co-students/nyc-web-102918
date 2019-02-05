@@ -10,10 +10,20 @@ import 'semantic-ui-css/semantic.min.css'
 
 import App from './App'
 import usersReducer from './reducers/usersReducer' //TODO: move
+import exampleReducer from './reducers/exampleReducer'
 import registerServiceWorker from './registerServiceWorker'
 
-const rootReducer = combineReducers({ usersReducer: usersReducer }) //TODO: move this too
+// combines your reducers =>
+/*
+{
+  key: value
+  whereToNestReducerState: reducer
+}
+*/
+const rootReducer = combineReducers({ usersReducer: usersReducer, something: exampleReducer }) //TODO: move this too
 
+// dion't use thunk if you don't think you need to
+// is not the only lubrary to do that -=> redux-saga, redux-promise
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk))) //TODO: move this
 
 console.log(`%c INITIAL REDUX STORE`, 'color: purple', store.getState())

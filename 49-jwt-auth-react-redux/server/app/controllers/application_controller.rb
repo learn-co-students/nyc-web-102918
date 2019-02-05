@@ -6,7 +6,7 @@ class ApplicationController < ActionController::API
   end
 
   def auth_header
-    request.headers['Authorization'] # Bearer <token>
+    request.headers['Authorization'] # Bearer <JWT>
   end
 
   def decoded_token

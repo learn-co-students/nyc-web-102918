@@ -26,6 +26,7 @@ class LoginForm extends React.Component {
 
   render() {
     console.log('%c LOGIN FORM PROPS: ', 'color: red', this.props)
+    // some auth logic here
     return this.props.loggedIn ? (
       <Redirect to="/profile" />
     ) : (
@@ -62,26 +63,29 @@ class LoginForm extends React.Component {
   }
 }
 
-// const mapStateToProps = (reduxStoreState) => {
-//   return {
-//     authenticatingUser: reduxStoreState.usersReducer.authenticatingUser,
-//     failedLogin: reduxStoreState.usersReducer.failedLogin,
-//     error: reduxStoreState.usersReducer.error,
-//     loggedIn: reduxStoreState.usersReducer.loggedIn
-//   }
-// }
+const mapStateToProps = (reduxStoreState) => {
+  return {
+    authenticatingUser: reduxStoreState.usersReducer.authenticatingUser,
+    failedLogin: reduxStoreState.usersReducer.failedLogin,
+    error: reduxStoreState.usersReducer.error,
+    loggedIn: reduxStoreState.usersReducer.loggedIn
+  }
+}
 
-const mapStateToProps = ({ usersReducer: { authenticatingUser, failedLogin, error, loggedIn } }) => ({
-  authenticatingUser,
-  failedLogin,
-  error,
-  loggedIn
-})
+// if you don't feel comfortable => don't do this!!!
+// const mapStateToProps = ({ usersReducer: { authenticatingUser, failedLogin, error, loggedIn } }) => ({
+//   authenticatingUser,
+//   failedLogin,
+//   error,
+//   loggedIn
+// })
 
 
 // const mapDispatchToProps = (dispatch) => {
 //   return {
-//     loginUser: (username, password) => dispatch(loginUser(username, password))
+//     // loginUser: (username, password) => dispatch(loginUser(username, password))
+//     // loginUser: bindActionCreators(loginUser)
+//       loginUser: loginUser
 //   }
 // }
 
@@ -92,4 +96,6 @@ const mapStateToProps = ({ usersReducer: { authenticatingUser, failedLogin, erro
 // export default connectedToReduxHOCWithRouterLoginForm
 
 
+// neat trick =>
+// bindActionCreators
 export default withRouter(connect(mapStateToProps, { loginUser })(LoginForm))

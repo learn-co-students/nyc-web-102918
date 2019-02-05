@@ -6,6 +6,17 @@ import Nav from './components/nav'
 import NotFound from './components/notFound'
 import './App.css'
 
+/*
+  App
+    Nav
+    Switch => different pages
+      Profile
+      Login
+      NotFound => 404
+
+  Provider
+    everyonthing else
+*/
 const App = props => {
   console.log('%c APP Props: ', 'color: firebrick', props)
   return (

@@ -1,5 +1,64 @@
 # JWT Auth in Redux and Rails
 
+Auth in a Single Page Application - SPA
+- not loading pages, purely visual, not hitting that R-R
+- a new problem with auth
+- R-R
+  - fetch that data
+
+How it (generally) worked in a Rails App
+
+Login => username/password => submit
+  some magic bcrypty stuff
+  sent back a response
+  you did something onm the backend => session stuff
+  session was stored => cookie => cookie monster! <= has a size limit
+Frontend => browser has that cookie, it has that session
+  Go to show route => send along cookie automagically
+  Backend will see that, check the session, sayt authorized or not
+REsponse
+
+SPA
+Async
+One time thing => not sending back cookies again and again
+  only making fetches now
+No session => Rails with API doesn't make a session for you
+  => the cookie, not really => there is something with the cookie being passed,
+  but it's not really the same
+=> the domains are different
+  SPA => it's own cookie
+  API => how many domains are there?
+  => you can use a cookie => if you do this, there are different security concerns
+
+1. That's the problem.
+2. How do we solve it?
+  token => encrypted string data to identify the user or client => login cookie
+  if there is a place we can store this and send it along with every request,
+  problem solved!
+  JWT sent with every request => act like a session
+  1. get the token => login => authenticated
+  2. do any fetch you want, similar to hitting any route you want
+    pass it with every request/fetch
+    authorization
+  3. response
+3. Backend
+4. Frontend
+
+"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.dGJ1150eKXAKGriu-C1-COUMpFZTFijStw6-q3yop0Y"
+
+JWT = JSON Web Token
+=> JSON
+
+bcrypt => magic thing for auth
+has_secure_password
+hashing library
+uysername / password
+  neve3r store that password => password_digest => encrypted, bcrypt hash => had a salt
+
+  bcrypt(salt + password) => salt.hash
+
+  secrety key => bycrpt(password + header + payload)
+
 **This is a sample application and walks through _one_ possible auth implementation. It does not cover everything there is to know about auth and is intended as an introduction. Please do not blindly copy/paste the code here. Use this as a guide for setting up auth in a React/Redux application using JSON Web Tokens.**
 
 - Second disclaimer: there are tradeoffs to every auth implementation. To secure our application further, we should set our tokens to expire and make sure our app is being served over [HTTPS](https://en.wikipedia.org/wiki/HTTPS). Furthermore, there are some [tradeoffs to storing JWTs in browser `localStorage`](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage). [This StackOverflow post has a concise summary of the benefits/tradeoffs about where/how to store tokens client-side](https://stackoverflow.com/questions/35291573/csrf-protection-with-json-web-tokens/35347022#35347022).
